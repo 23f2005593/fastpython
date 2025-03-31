@@ -14,7 +14,7 @@ app.add_middleware(
 )
 
 # Load student marks from marks.json
-with open("marks.json", "r") as file:
+with open("q-vercel-python.json", "r") as file:
     marks_data = {student["name"]: student["marks"] for student in json.load(file)}
 
 @app.get("/api")
