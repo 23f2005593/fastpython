@@ -16,7 +16,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
       
-      - name: 23f2005593@ds.study.iitm.ac.in
+      - name: 
         run: |
           echo "This step identifies the workflow creator"
           echo "Running basic system checks..."
