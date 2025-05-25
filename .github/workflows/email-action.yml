@@ -1,0 +1,24 @@
+name: Email Address Action
+
+# Trigger the action on push to main branch or manually
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:  # This allows manual triggering
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: 23f2005593@ds.study.iitm.ac.in
+        run: echo "Hello, world! This step contains the required email address."
+      
+      - name: Additional step
+        run: |
+          echo "Current date: $(date)"
+          echo "Repository: ${{ github.repository }}"
+          echo "Workflow triggered by: ${{ github.event_name }}"
